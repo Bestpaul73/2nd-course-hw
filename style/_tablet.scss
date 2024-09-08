@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+    .center {
+      padding-left: calc(50% - 1024px / 2);
+      padding-right: calc(50% - 1024px / 2);
+    }
+
+    .games {
+        justify-content: center;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .center {
+      padding-left: calc(50% - 786px / 2);
+      padding-right: calc(50% - 786px / 2);
+    }
+  }
