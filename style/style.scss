@@ -67,7 +67,9 @@ button {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0px;
-  transition: all 0.3s;
+  transition: all 0.2s;
+  border: none;
+  outline: none;
   &:hover {
     background: #eb443f;
     cursor: pointer;
@@ -86,11 +88,35 @@ button {
 
   &__item {
     position: relative;
+    // width: 378px;
+    // height: 300px;
+    // border-radius: 18px;
+    // background: linear-gradient(180deg, #27010f, #001944) 100%, url(0023);
+    // transition: outline 0.2s;
+
+    // &:nth-child(1) {
+    //   background-image: url(../img/Rectangle6.jpeg);
+    // }
+    // &:nth-child(2) {
+    //   background-image: url(../img/Rectangle7.jpeg);
+    // }
+    // &:nth-child(3) {
+    //   background-image: url(../img/Rectangle8.jpeg);
+    // }
+
+    // &:hover {
+    //   outline: 3px solid #44d2ff;
+    // }
   }
 
   &__img {
-    border-radius: 16px;
+    width: 100%;
+    border-radius: 18px;
     background: linear-gradient(180deg, #27010f, #001944) 100%, url(0023);
+    transition: outline 0.2s;
+    &:hover {
+      outline: 3px solid #44d2ff;
+    }
   }
 
   &__name {
@@ -102,7 +128,9 @@ button {
     font-weight: 600;
     line-height: 32px;
     letter-spacing: 0px;
+    pointer-events: none;
   }
 }
 
 @import 'tablet';
+@import 'mobile';

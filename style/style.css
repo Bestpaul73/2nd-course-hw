@@ -65,7 +65,9 @@ button {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0px;
-  transition: all 0.3s;
+  transition: all 0.2s;
+  border: none;
+  outline: none;
 }
 .button:hover {
   background: #eb443f;
@@ -86,8 +88,13 @@ button {
   position: relative;
 }
 .games__img {
-  border-radius: 16px;
+  width: 100%;
+  border-radius: 18px;
   background: linear-gradient(180deg, #27010f, #001944) 100%, url(0023);
+  transition: outline 0.2s;
+}
+.games__img:hover {
+  outline: 3px solid #44d2ff;
 }
 .games__name {
   position: absolute;
@@ -98,6 +105,7 @@ button {
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0px;
+  pointer-events: none;
 }
 
 @media (max-width: 1200px) {
@@ -113,5 +121,31 @@ button {
   .center {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
+  }
+}
+@media (max-width: 425px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    min-height: 735px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__title {
+    padding-top: 238px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .header__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .games__item {
+    max-width: 343px;
   }
 }/*# sourceMappingURL=style.css.map */
