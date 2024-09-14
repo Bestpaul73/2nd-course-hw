@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style/style.css" />
     <title>3Games</title>
   </head>
+
   <body>
     <header class="header center">
       <div class="header__title">
@@ -21,24 +22,67 @@
         <span class="header__text-bold">поехали</span> и
         <span class="header__text-bold">приступай</span>
       </div>
-      <button class="button">Поехали!</button>
+      <button class="button" onclick="location.href='#games-menu'">Поехали!</button>
     </header>
 
-    <section class="games center">
-      <a class="games__item" href="#">
+    <section class="games center" id="games-menu">
+      <a class="games__item" href="#game1">
         <img class="games__img" src="./img/Rectangle6.jpeg" alt="Game1" />
         <p class="games__name">Игра 1</p></a
       >
-      <a class="games__item" href="#">
+      <a class="games__item" href="#game2">
         <img class="games__img" src="./img/Rectangle7.jpeg" alt="Game2" />
         <p class="games__name">Игра 2</p></a
       >
-      <a class="games__item" href="#">
+      <a class="games__item" href="#game3">
         <img class="games__img" src="./img/Rectangle8.jpeg" alt="Game2" />
         <p class="games__name">Игра 3</p></a
       >
     </section>
 
-    <!-- <script src="./src/hw1.js"></script> -->
+    <section class="game-box">
+      <section class="game center" id="game1">
+        <div class="game__content">
+          <h2 class="game__name">Времена года!</h2>
+          <p class="game__text">
+            Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете, к какому времени года он относится
+          </p>
+          <button class="button">Играть!</button>
+        </div>
+        <div class="game__img-wrapper">
+          <img class="game__img" src="./img/game1.png" alt="game1" />
+        </div>
+      </section>
+
+      <section class="game center" id="game2">
+        <div class="game__content">
+          <h2 class="game__name">Запомни слова</h2>
+          <p class="game__text">
+            При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.
+          </p>
+          <button class="button">Играть!</button>
+        </div>
+        <div class="game__img-wrapper">
+          <img class="game__img" src="./img/game2.png" alt="game2" />
+        </div>
+      </section>
+
+      <section class="game center" id="game3">
+        <div class="game__content">
+          <h2 class="game__name">Игра в загадки</h2>
+          <p class="game__text">
+            Компьютер загадывает загадку, вам необходимо ее угадать. Если вы дадите неправильный ответ, то компьютер
+            даст вам подсказку. У вас будет три попытки и две подсказки.
+          </p>
+          <button class="button">Играть!</button>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer center">
+      <div class="footer__text">Все права защищены</div>
+    </footer>
+
+    <!-- <script src="./src/hw2.js"></script> -->
   </body>
 </html>

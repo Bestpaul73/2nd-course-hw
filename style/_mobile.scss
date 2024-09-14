@@ -24,7 +24,44 @@
 
   .games {
     &__item {
-        max-width: 343px;
+      max-width: 343px;
     }
   }
+
+  .game {
+    flex-direction: column;
+    gap: 64px;
+    padding-top: 51px;
+    padding-bottom: 85px;
+
+    &:nth-child(2) {
+      flex-direction: column;
+    }
+
+    &:nth-child(3) {
+      padding-bottom: 487px;
+    }
+
+    &__content {
+      align-items: center;
+    }
+
+    &__name {
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+    }
+
+    &__img-wrapper {
+      max-width: 344px;
+    }
+  }
+
+
 }
